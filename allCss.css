@@ -101,6 +101,7 @@ body, html, p, h, h1, h2, h3, b, u, i, h4, h5, h6, code {
  cursor: pointer;
  margin-right: 5px;
  margin-left: 5px;
+ font-family: text;
 }
 
 .option:hover {
@@ -121,6 +122,7 @@ body, html, p, h, h1, h2, h3, b, u, i, h4, h5, h6, code {
  cursor: pointer;
  margin-right: 5px;
  margin-left: 5px;
+ font-family: text;
 }
 
 .option2:hover {
@@ -183,20 +185,42 @@ body, html, p, h, h1, h2, h3, b, u, i, h4, h5, h6, code {
  z-index: 1;
 }
 
-.health {
- font-size: 30px;
-}
-
 .health:before {
  content: 'Health: ';
 }
 
-.level {
- font-size: 30px;
+.name:before {
+ content: 'Name: ';
 }
 
 .level:before {
  content: 'Level: ';
+}
+
+.xp:before {
+ content: 'Xp: ';
+}
+
+.gold:before {
+ content: 'Gold: ';
+}
+
+.damage:before {
+ content: 'Damage: ';
+}
+
+.defense:before {
+ content: 'Defense: ';
+}
+
+.level, .name, .health, .gold, .xp, .damage, .defense {
+ font-size: 50px;
+ color: white;
+ font-family: none;
+}
+
+span {
+ font-family: relative;
 }
 
 .leaveGame {
@@ -205,10 +229,15 @@ body, html, p, h, h1, h2, h3, b, u, i, h4, h5, h6, code {
  color: white;
  display: inline-block;
  cursor: pointer;
+ transition: color .2s;
 }
 
 .leaveGame:after {
  content: 'Leave Game';
+}
+
+.leaveGame:hover {
+ color: blue;
 }
 
 .leaveGameBox {
@@ -225,17 +254,18 @@ body, html, p, h, h1, h2, h3, b, u, i, h4, h5, h6, code {
 .otherPic, .profilePic {
  font-family: none;
  font-size: 35px;
- width: 35%;
+ width: 25%;
  height: 25%;
 }
 
 .playerView {
- background-color:red;
+ background-color: black;
  width: 50%;
  height: 100%;
  left: 0px;
  position: absolute;
  top: 0px;
+ border: 1px solid white;
 }
 
 .otherView {
@@ -244,5 +274,13 @@ body, html, p, h, h1, h2, h3, b, u, i, h4, h5, h6, code {
  right: 0px;
  position: absolute;
  top: 0px;
- background-color: blue;
+ border: 1px solid white;
+ background-color: black;
+}
+
+.scrollable {
+ overflow-y: auto;
+ width: 99%;
+ height: 50%;
+ border: 1px white solid;
 }
