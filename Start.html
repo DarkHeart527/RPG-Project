@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>
+			The Game Of Death
+		</title>
+		<script src="navigateJavascript.js" type="text/javascript">
+		</script>
+		<link href="allCss.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body style="background-color: black;transition: 3s;" id="body">
+		<audio type="audio/mp3" loop autoplay id="sound">
+		</audio>
+		<div class="homePage" id="homePage">
+			<center>
+				<p class="spacer">a</p>
+				<p class="homeWelcome">Welcome To "The Game Of Death"!</p>
+				<p class="spacer">a</p>
+				<p class="homeWelcome clickable" onClick="startUp()">Start</p>
+			</center>
+		</div>
+		<div class="main" id="main" style="visibility: hidden;transition:3s;opacity: 0">
+			<div id="header" class="header" style="visibility: hidden">
+			</div>
+			<div class="ab full homeT" id="homeTabU" style=";transition:3s;;opacity: 1">
+				<p class="head">How To Play</p>
+				<p class="head">Updates</p>
+			</div>
+			<div class="ab full settingsT" id="settingsTabU" style="visibility: hidden;transition:3s;opacity: 0">
+			</div>
+			<div class="ab full profileT" id="profileTabU" style="visibility: hidden;transition:3s;opacity: 0">
+			</div>
+			<div class="ab full mapT" id="mapTabU" style="visibility: hidden;transition:3s;opacity: 0">
+			</div>
+			<div class="ab full battlesT" id="battlesTabU" style="visibility: hidden;transition:3s;opacity: 0">
+				<p class="head">Work In Progress (WIP)!!!</p>
+				<p onClick="selectZombie()">Zombie</p>
+				<!--<p onClick="selectZombie()">Zombie</p>
+				<p onClick="selectZombie()">Zombie</p>
+				<p onClick="selectZombie()">Zombie</p>
+				<p onClick="selectZombie()">Zombie</p>
+				<p onClick="selectZombie()">Zombie</p>
+				<p onClick="selectZombie()">Zombie</p>
+				<p onClick="selectZombie()">Zombie</p>
+				<p onClick="selectZombie()">Zombie</p>
+				<p onClick="selectZombie()">Zombie</p>
+				<p onClick="selectZombie()">Zombie</p>
+				<p onClick="selectZombie()">Zombie</p>-->
+				<br />
+				<p onClick="startBattle();">Start</p>
+			</div>
+		</div>
+		<div class="homeWelcomeFlash" id="homeWelcomeFlash" style="visibility: hidden;transition:3s;opacity: 0">
+		</div>
+		<!-- THIS IS THE BATTLE TAB - Current Project -- PUT THIS IN AFTER !!style="visibility: hidden;transition: 3s;opacity: 0;"!! -->
+		<div class="battleTabView" id="battleTabView" style="visibility: visible;transition: 3s;opacity: 1;">
+			<div class="leaveGameBox">
+				<p onClick="leaveGame();" class="leaveGame"></p>
+			</div>
+			<div class="playerView" id="playerArea">
+				<img class="profilePic" id="profilePic" alt="Profile Picture Of NULL" />
+				<p class="health"><span id="playerHealth"></span></p>
+				<p class="level"><span id="playerLevel"></span></p>
+			</div>
+			<div class="otherView" id="otherArea">
+				<img class="otherPic" id="otherPic" alt="Profile Picture Of NULL" />
+				<p class="health"><span id="otherHealth"></span></p>
+				<p class="level"><span id="otherLevel"></span></p>
+			</div>
+		</div>
+		<div id="options">
+		</div>
+		<div id="loading" class="loading">
+				<center>
+					<p class="assets">Assets Loaded <span id="assetNumber">0</span><span> / </span><span id="totalAssets">0</span></p>
+				</center>
+			<div>
+				<center>
+					<img class="loadIcon2" id="loadIcon" src="loadIconAfterLay.png" width="500px" height="500px" />
+					<img class="loadIcon" id="loadIcon" src="loadIcon.png" width="500px" height="500px" />
+				</center>
+			</div>
+		</div>
+	</body>
+</html>
