@@ -21,7 +21,7 @@
 		<div class="main" id="main" style="visibility: hidden;transition:3s;opacity: 0">
 			<div id="header" class="header" style="visibility: hidden">
 			</div>
-			<div class="ab full homeT" id="homeTabU" style=";transition:3s;;opacity: 1">
+			<div class="ab full homeT" id="homeTabU" style="visibility: hidden;transition:3s;opacity: 0">
 				<p class="head">How To Play</p>
 				<p class="head">Updates</p>
 			</div>
@@ -58,13 +58,27 @@
 			</div>
 			<div class="playerView" id="playerArea">
 				<img class="profilePic" id="profilePic" alt="Profile Picture Of NULL" />
-				<p class="health"><span id="playerHealth"></span></p>
-				<p class="level"><span id="playerLevel"></span></p>
+				<div class="scrollable">
+					<p class="name"><span id="playerName"></span></p>
+					<p class="health"><span id="playerHealth"></span> / <span id="playerMaxHealth"></span></p>
+					<p class="level"><span id="playerLevel"></span></p>
+					<p class="xp"><span id="playerXp"></span></p>
+					<p class="gold"><span id="playerGold"></span></p>
+					<p class="damage"><span id="playerDamage"></span></p>
+					<p class="defense"><span id="playerDefense"></span></p>
+				</div>
 			</div>
 			<div class="otherView" id="otherArea">
 				<img class="otherPic" id="otherPic" alt="Profile Picture Of NULL" />
-				<p class="health"><span id="otherHealth"></span></p>
-				<p class="level"><span id="otherLevel"></span></p>
+				<div class="scrollable">
+					<p class="name"><span id="otherName"></span></p>
+					<p class="health"><span id="otherHealth"></span> / <span id="otherMaxHealth"></span></p>
+					<p class="level"><span id="otherLevel"></span></p>
+					<p class="xp"><span id="otherXp"></span></p>
+					<p class="gold"><span id="otherGold"></span></p>
+					<p class="damage"><span id="otherDamage"></span></p>
+					<p class="defense"><span id="otherDefense"></span></p>
+				</div>
 			</div>
 		</div>
 		<div id="options">
